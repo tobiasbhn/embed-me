@@ -9,19 +9,10 @@ Gem::Specification.new do |spec|
   spec.version     = EmbedMe::VERSION
   spec.authors     = ["Tobias Bohn"]
   spec.email       = ["info@tobiasbohn.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of EmbedMe."
-  spec.description = "TODO: Description of EmbedMe."
+  spec.homepage    = "https://github.com/tobiasbhn/embed-me"
+  spec.summary     = "EmbedMe allows you and your users to easily embed your rails application or parts of it on other websites."
+  spec.description = "EmbedMe allows you and your users to easily embed your rails application or parts of it on other websites."
   spec.license     = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
