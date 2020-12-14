@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  mount EmbedMe::Engine => "/embed_me"
+  root 'posts#index'
+  resources :posts
+  # mount EmbedMe::Engine => "/embed_me"
 end
