@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   # is embeddable
   def embeddable
-    render plain: "embeddable"
+    text = embedded? ? "embeddable and indeed imbedded" : "embeddable but currently not embedded"
+    render plain: text
   end
 end
