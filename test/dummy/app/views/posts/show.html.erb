@@ -15,5 +15,5 @@
   <%= @post.published %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= embeddable_link_to 'Edit', edit_post_path(@post) %> |
+<%= embeddable_link_to 'Back', posts_path %>

@@ -1,7 +1,8 @@
 module ActionDispatch::Routing
   class Mapper
     def embeddable
-      scope "(:#{EmbedMe.scope_name.to_s})", embed: /#{EmbedMe.scope_name.to_s}/ do
+      yield
+      scope EmbedMe.scope_name.to_s, as: EmbedMe.scope_name.to_s, embedded: true do
         yield
       end
     end
