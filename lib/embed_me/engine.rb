@@ -8,6 +8,7 @@ module EmbedMe
         helper_method :embedded?
 
         helper EmbedMe::LinkHelper
+        helper EmbedMe::CodeGenerator
 
         def check_embedding!
           if embedded?

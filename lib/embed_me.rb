@@ -1,5 +1,6 @@
 require "embed_me/engine"
 require "embed_me/link_helper"
+require "embed_me/code_generator"
 require "embed_me/rails/routes"
 
 module EmbedMe

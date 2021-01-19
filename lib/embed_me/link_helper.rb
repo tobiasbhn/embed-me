@@ -33,5 +33,15 @@ module EmbedMe
       merged_params = original_link_params.merge({embedded: true})
       merged_params
     end
+
+    def current_page_embed_url
+      # return if no link available
+      return nil unless embedded_link_available?(request.path)
+
+      # get current link
+      current_page = merged_embedded(request.path)
+      current_page.merge!({only_path: false})
+      url_for(current_page)
+    end
   end
 end
