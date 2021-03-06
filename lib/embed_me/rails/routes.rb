@@ -3,7 +3,9 @@ module ActionDispatch::Routing
     # Enables the definition of resources that should be embeddable. The routes defined
     # within the block are transferred to the application in duplicated form. Once
     # normally, as they would always work, and once under an embed scope. The name of
-    # the scope can be set in config (default: 'embed').
+    # the scope can be set in config (default: 'embed'). All paths under the embed
+    # scope are sent without X-Frames-Options header, so they can be displayed in a frame.
+    # All other paths are sent normally (Rails default X-Frames-Options = SAMEORIGIN).
     #
     # ==== Examples
     # Assuming the following route definition:

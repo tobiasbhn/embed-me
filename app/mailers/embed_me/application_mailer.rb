@@ -1,4 +1,4 @@
-module EmbedMe
+module EmbedMe # :nodoc: all
   class ApplicationMailer < ActionMailer::Base
     default from: 'from@example.com'
     layout 'mailer'
