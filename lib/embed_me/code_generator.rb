@@ -38,5 +38,9 @@ module EmbedMe
       element = content_tag(:iframe, fallback, default_html)
       "#{element}"
     end
+
+    def embed_frontend(options = {})
+      render "embed_me/embed_frontend"
+    end
   end
 end
