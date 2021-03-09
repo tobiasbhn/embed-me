@@ -2,22 +2,33 @@
 EmbedMe allows you and your users to easily embed your rails application or parts of it on other websites.
 
 
+## Table of Contents
+- [Use Cases](#use-cases)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Define Embeddable Routes](#define-embeddable-routes)
+  - [Adjust Behaviour of Application](#adjust-behaviour-of-application)
+  - [Provide Embed-Code](#provide-embed-code)
+  - [Adjust Links on embeddable Pages](#adjust-links-on-embeddable-pages)
+- [License](#license)
+
+
 ## Use Cases
 
 ### YouTube
 YouTube has offered this feature for years. Users have the option to embed a video from YouTube on their own blog or website. While normal YouTube content (www.youtube.com/watch?v=) is blocked by the X-Frame options, content via a YouTube Embed URL (www.youtube.com/embed/...) can be displayed in a frame. If a video is opened in a frame, the appearance is optimized so that it works well in a frame (no ratings, no comments, only video). Although YouTube does not use this gem for this function, the way this gem works is adapted accordingly.
 
-![EmbedMe example use case (YouTube) for embedding in rails](images/embed_me-example-use-case-youtube-1.png)
+![EmbedMe example use case (YouTube) for embedding in rails](https://raw.github.com/tobiasbhn/embed-me/master/images/embed_me-example-use-case-youtube-1.png)
 
-![EmbedMe example use case (YouTube) for embedding in rails](images/embed_me-example-use-case-youtube-2.png)
+![EmbedMe example use case (YouTube) for embedding in rails](https://raw.github.com/tobiasbhn/embed-me/master/images/embed_me-example-use-case-youtube-2.png)
 
 
 ### Other Examples
 Similar functions are also available on Twitter, Instagram, Google Maps and many other sites.
 
-![EmbedMe example use case (Instagram) for embedding in rails](images/embed_me-example-use-case-instagram.png)
+![EmbedMe example use case (Instagram) for embedding in rails](https://raw.github.com/tobiasbhn/embed-me/master/images/embed_me-example-use-case-instagram.png)
 
-![EmbedMe example use case (Twitter) for embedding in rails](images/embed_me-example-use-case-twitter.png)
+![EmbedMe example use case (Twitter) for embedding in rails](https://raw.github.com/tobiasbhn/embed-me/master/images/embed_me-example-use-case-twitter.png)
 
 
 ## Installation
@@ -89,7 +100,7 @@ You may want to show the user of your application the code to include the resour
 
 To get the default interface, use the function `embed_frontend`, which returns an HTML button to open a basic pop-up that allows the user of the web page to copy the embedding code. The default design can be overridden with a file at `app/views/embed_me/_embed_frontend.html.erb`.
 
-```html
+```
 <div class="container-fluid d-flex align-items-center">
   <!-- some frontend stuff -->
   <%= embed_frontend %>
@@ -98,7 +109,7 @@ To get the default interface, use the function `embed_frontend`, which returns a
 
 Default Popup will look like this:
 
-![EmbedMe default popup to embed rails resource](images/embed_me-default-popup.png)
+![EmbedMe default popup to embed rails resource](https://raw.github.com/tobiasbhn/embed-me/master/images/embed_me-default-popup.png)
 
 #### Default Embedding Code
 
@@ -146,7 +157,7 @@ embeddable_link_to("Embeddable", embeddable_path)
 # => <a href="/embed/embeddable">Embeddable</a>
 ```
 
-#### Embedded Link Available?
+#### Embedded Link Available
 
 Checks whether there is an embedded version of a specific route.
 
