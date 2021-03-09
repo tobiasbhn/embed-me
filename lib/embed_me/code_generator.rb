@@ -39,6 +39,9 @@ module EmbedMe
       "#{element}"
     end
 
+    # Returns an HTML button to open a basic pop-up that allows the user of the web page to copy
+    # the embedding code. The default design can be overridden with a file at
+    # app/views/embed_me/_embed_frontend.html.erb.
     def embed_frontend(options = {})
       render "embed_me/embed_frontend"
     end

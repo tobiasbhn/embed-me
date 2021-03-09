@@ -1,6 +1,6 @@
 module ActionDispatch::Routing
   class Mapper
-    # Enables the definition of resources that should be embeddable. The routes defined
+    # Define Resources that should be embeddable. The routes defined
     # within the block are transferred to the application in duplicated form. Once
     # normally, as they would always work, and once under an embed scope. The name of
     # the scope can be set in config (default: 'embed'). All paths under the embed
